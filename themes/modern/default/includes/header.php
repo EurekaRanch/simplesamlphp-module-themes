@@ -23,8 +23,6 @@ $js_path   = $url_path . '/js';
 $img_path  = $url_path . '/img';
 $language  = $this->getLanguage();
 
-$this->data['isadmin'] = (bool)SimpleSAML_Session::getSessionFromRequest()->getAuthState('admin');
-
 $login_url = isset($this->data['loginurl'])
   ? $this->data['loginurl']
   : '';
@@ -33,9 +31,6 @@ $title     = isset($this->data['header'])
   ? $this->data['header']
   : 'SimpleSAMLphp';
 
-$alert_msg = $this->data['isadmin']
-  ? $this->t('{core:frontpage:loggedin_as_admin}')
-  : '<a href="' . $login_url . '">' . $this->t('{core:frontpage:login_as_admin}') . '</a>';
 
 if (array_key_exists('pageid', $this->data)) :
   $hookinfo = array(
@@ -98,14 +93,10 @@ endif;
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">SAML</a>
           </div>
           <div class="collapse navbar-collapse" id="header-navigation">
-            <ul class="nav navbar-nav">
-              <li role="presentation"><a href="/">Home</a></li>
-            </ul>
             <ul class="nav navbar-nav navbar-right">
-              <?php echo simplesamlphp_get_authentication_nav($this); ?>
+              <?php //echo simplesamlphp_get_authentication_nav($this); ?>
               <li role="presentation" class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                   Language <span class="caret"></span>
