@@ -30,7 +30,8 @@ $errorparams          = $this->data['errorparams'];
 </div>
 <?php endif; ?>
 
-<div class="col-md-12 text-center">
+<div class="col-md-3"></div>
+<div class="col-md-6">
   <div class="panel panel-default" style="max-width: 555px;">
     <div class="panel-heading">
 <!--        <h3 class="panel-title">--><?php //echo $this->t('{login:user_pass_header}'); ?><!--</h3>-->
@@ -73,6 +74,6 @@ $errorparams          = $this->data['errorparams'];
     </div>
   </div>
 </div>
-
+<div class="col-md-3"></div>
 
 <?php $this->includeAtTemplateBase('includes/footer.php'); ?>
