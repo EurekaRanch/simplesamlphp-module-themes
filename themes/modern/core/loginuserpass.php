@@ -23,57 +23,56 @@ $errorparams          = $this->data['errorparams'];
 <?php if ($errorcode !== NULL) : ?>
 <div class="col-md-12">
   <div class="alert alert-danger" role="alert">
-    <h2><?php echo $this->t('{login:error_header}'); ?></h2>
+<!--    <h2>--><?php //echo $this->t('{login:error_header}'); ?><!--</h2>-->
     <p><?php echo htmlspecialchars($this->t('{errors:title_' . $errorcode . '}', $errorparams)); ?></p>
     <p><?php echo htmlspecialchars($this->t('{errors:descr_' . $errorcode . '}', $errorparams)); ?></p>
   </div>
 </div>
 <?php endif; ?>
 
-<div class="text-center">
-    <div class="col-md-6">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-    <!--        <h3 class="panel-title">--><?php //echo $this->t('{login:user_pass_header}'); ?><!--</h3>-->
-            <h3 class="panel-title">Please log in to access the Innovation Engineering Labs website</h3>
-        </div>
-
-        <div class="panel-body">
-          <p class="logintext">
-            <?php //echo $this->t('{login:user_pass_text}'); ?>
-          </p>
-
-          <form action="?" method="post" name="f">
-            <div class="form-group">
-              <label for-"username">Email</label>
-              <input type="text" id="username"
-                tabindex="1"
-                name="username"
-                value="<?php echo htmlspecialchars($this->data['username']); ?>"
-                class="form-control"
-                />
-            </div>
-
-            <div class="form-group">
-              <label for-"password">Password</label>
-              <input type="password" id="password"
-                tabindex="2"
-                name="password"
-                class="form-control" />
-            </div>
-
-            <button type="submit" class="btn btn-default pull-right">Submit</button>
-
-            <?php foreach ($this->data['stateparams'] as $name => $value) : ?>
-              <input type="hidden"
-                name="<?php echo htmlspecialchars($name); ?>"
-                value="<?php echo htmlspecialchars($value); ?>" />
-            <?php endforeach; ?>
-
-          </form>
-        </div>
-      </div>
+<div class="col-md-12 text-center">
+  <div class="panel panel-default" style="max-width: 555px;">
+    <div class="panel-heading">
+<!--        <h3 class="panel-title">--><?php //echo $this->t('{login:user_pass_header}'); ?><!--</h3>-->
+        <h3 class="panel-title">Please log in to access the Innovation Engineering Labs website</h3>
     </div>
+
+    <div class="panel-body">
+      <p class="logintext">
+        <?php //echo $this->t('{login:user_pass_text}'); ?>
+      </p>
+
+      <form action="?" method="post" name="f">
+        <div class="form-group text-left">
+          <label for-"username">Email</label>
+          <input type="text" id="username"
+            tabindex="1"
+            name="username"
+            value="<?php echo htmlspecialchars($this->data['username']); ?>"
+            class="form-control"
+            />
+        </div>
+
+        <div class="form-group text-left">
+          <label for-"password">Password</label>
+          <input type="password" id="password"
+            tabindex="2"
+            name="password"
+            class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-default pull-right">Submit</button>
+
+        <?php foreach ($this->data['stateparams'] as $name => $value) : ?>
+          <input type="hidden"
+            name="<?php echo htmlspecialchars($name); ?>"
+            value="<?php echo htmlspecialchars($value); ?>" />
+        <?php endforeach; ?>
+
+      </form>
+    </div>
+  </div>
 </div>
+
 
 <?php $this->includeAtTemplateBase('includes/footer.php'); ?>
