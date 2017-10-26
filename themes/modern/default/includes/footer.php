@@ -39,17 +39,7 @@ endif;
       <div class="container">
         <!-- start the .footer.row -->
         <div class="row">
-          <div class="col-md-12">
-            <h2><?php echo $this->t('{core:frontpage:about_header}'); ?></h2>
-            <p><?php echo $this->t('{core:frontpage:about_text}'); ?></p>
-          </div>
-          <div class="col-md-12">
-            <p>
-              Theme by <a href="http://corycollier.com/">Cory Collier</a>, and can be found at
-              <a href="https://github.com/corycollier/simplesamlphp-module-themes">
-              <i class="fa fa-github"></i> https://github.com/corycollier/simplesamlphp-module-themes</a>
-            </p>
-          </div>
+          
         </div>
       </div>
     </div>
