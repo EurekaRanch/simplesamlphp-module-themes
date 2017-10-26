@@ -39,7 +39,7 @@ endif;
       <div class="container">
         <!-- start the .footer.row -->
         <div class="row">
-          
+
         </div>
       </div>
     </div>

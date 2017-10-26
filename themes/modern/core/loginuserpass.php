@@ -30,47 +30,50 @@ $errorparams          = $this->data['errorparams'];
 </div>
 <?php endif; ?>
 
-<div class="col-md-12">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title"><?php echo $this->t('{login:user_pass_header}'); ?></h3>
-    </div>
-
-    <div class="panel-body">
-      <p class="logintext">
-        <?php echo $this->t('{login:user_pass_text}'); ?>
-      </p>
-
-      <form action="?" method="post" name="f">
-        <div class="form-group">
-          <label for-"username">Username</label>
-          <input type="text" id="username"
-            tabindex="1"
-            name="username"
-            value="<?php echo htmlspecialchars($this->data['username']); ?>"
-            class="form-control"
-            />
+<div class="text-center">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+    <!--        <h3 class="panel-title">--><?php //echo $this->t('{login:user_pass_header}'); ?><!--</h3>-->
+            <h3 class="panel-title">Please log in to access the Innovation Engineering Labs website</h3>
         </div>
 
-        <div class="form-group">
-          <label for-"password">Password</label>
-          <input type="password" id="password"
-            tabindex="2"
-            name="password"
-            class="form-control" />
+        <div class="panel-body">
+          <p class="logintext">
+            <?php //echo $this->t('{login:user_pass_text}'); ?>
+          </p>
+
+          <form action="?" method="post" name="f">
+            <div class="form-group">
+              <label for-"username">Email</label>
+              <input type="text" id="username"
+                tabindex="1"
+                name="username"
+                value="<?php echo htmlspecialchars($this->data['username']); ?>"
+                class="form-control"
+                />
+            </div>
+
+            <div class="form-group">
+              <label for-"password">Password</label>
+              <input type="password" id="password"
+                tabindex="2"
+                name="password"
+                class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-default pull-right">Submit</button>
+
+            <?php foreach ($this->data['stateparams'] as $name => $value) : ?>
+              <input type="hidden"
+                name="<?php echo htmlspecialchars($name); ?>"
+                value="<?php echo htmlspecialchars($value); ?>" />
+            <?php endforeach; ?>
+
+          </form>
         </div>
-
-        <button type="submit" class="btn btn-default">Submit</button>
-
-        <?php foreach ($this->data['stateparams'] as $name => $value) : ?>
-          <input type="hidden"
-            name="<?php echo htmlspecialchars($name); ?>"
-            value="<?php echo htmlspecialchars($value); ?>" />
-        <?php endforeach; ?>
-
-      </form>
+      </div>
     </div>
-  </div>
 </div>
 
 <?php $this->includeAtTemplateBase('includes/footer.php'); ?>
