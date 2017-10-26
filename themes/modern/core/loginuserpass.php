@@ -14,7 +14,7 @@
 ?>
 <?php
 // Variable assignment.
-$this->data['header'] = $this->t('{login:user_pass_header}');
+$this->data['header'] = '';
 $errorcode            = $this->data['errorcode'];
 $errorparams          = $this->data['errorparams'];
 ?>
