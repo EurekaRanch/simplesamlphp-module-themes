@@ -71,8 +71,10 @@ $errorparams          = $this->data['errorparams'];
         <?php endforeach; ?>
 
       </form>
+
     </div>
   </div>
+    <div class="text-center"><a href="<?= WEBSITE ?>login/sso_login.php">SSO Login</a></div>
 </div>
 <div class="col-md-3"></div>
 
