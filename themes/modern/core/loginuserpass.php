@@ -61,7 +61,7 @@ $errorparams          = $this->data['errorparams'];
             name="password"
             class="form-control" />
         </div>
-
+        <a href="<?= WEBSITE ?>getpassword/">Forgot Password?</a>
         <button type="submit" class="btn btn-default pull-right">Submit</button>
 
         <?php foreach ($this->data['stateparams'] as $name => $value) : ?>
