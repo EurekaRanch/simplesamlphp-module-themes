@@ -13,11 +13,11 @@
  */
 ?>
 <?php
-$dir = SimpleSAML_Module::getModuleDir('themes');
+$dir = SimpleSAML\Module::getModuleDir('themes');
 require $dir . '/lib/functions.php';
 
 // Define variables.
-$url_path  = SimpleSAML_Module::getModuleURL('themes');
+$url_path  = SimpleSAML\Module::getModuleURL('themes');
 $css_path  = $url_path . '/css';
 $js_path   = $url_path . '/js';
 $img_path  = $url_path . '/img';
@@ -45,7 +45,7 @@ if (array_key_exists('pageid', $this->data)) :
     'jquery' => &$jquery,
     'page'   => $this->data['pageid']
   );
-  SimpleSAML_Module::callHooks('htmlinject', $hookinfo);
+    SimpleSAML\Module::callHooks('htmlinject', $hookinfo);
 
 endif;
 ?>

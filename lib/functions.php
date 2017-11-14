@@ -147,7 +147,7 @@ function simplesamlphp_get_entry_name ($view, $entry = array()) {
  * @return string The resulting url.
  */
 function simplesamlphp_get_entry_href ($view, $key, $entry = array()) {
-  $raw = SimpleSAML_Module::getModuleURL('core/show_metadata.php', array(
+  $raw = SimpleSAML\Module::getModuleURL('core/show_metadata.php', array(
     'set'      => $key,
     'entityid' => $entry['entityid'],
   ));
@@ -187,7 +187,7 @@ function simplesamlphp_get_authentication_nav($view) {
   }
 
 
-  $url = SimpleSAML_Module::getModuleURL('core/authenticate.php', $params);
+  $url = SimpleSAML\Module::getModuleURL('core/authenticate.php', $params);
 
   return '<li><a href="' . $url . '">' . $text . '</a></li>';
   //core/authenticate.php?as=admin

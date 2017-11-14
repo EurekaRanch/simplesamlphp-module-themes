@@ -94,7 +94,7 @@ $has_remote_entries = is_array($this->data['metaentries']['remote'])
 
 <?php if ($this->data['isadmin']) : ?>
 <div class="col-md-12">
-  <?php $action = SimpleSAML_Module::getModuleURL('core/show_metadata.php'); ?>
+  <?php $action = SimpleSAML\Module::getModuleURL('core/show_metadata.php'); ?>
   <form action="<?php echo $action; ?>" class="" method="get" >
     <fieldset>
       <legend>Lookup metadata</legend>
