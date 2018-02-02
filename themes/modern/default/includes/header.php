@@ -54,7 +54,6 @@ endif;
     <meta name="description" content="SAML Configuration">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" type="text/css" href="<?php echo $css_path; ?>/bootstrap.css" />
