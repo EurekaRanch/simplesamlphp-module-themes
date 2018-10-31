@@ -1,5 +1,5 @@
 {
-    "name"              : "corycollier/simplesamlphp-module-themes",
+    "name"              : "eurekaranch/simplesamlphp-module-themes",
     "description"       : "Themes for use in SimpleSAMLphp installations",
     "type"              : "simplesamlphp-module",
     "license"           : "MIT",
