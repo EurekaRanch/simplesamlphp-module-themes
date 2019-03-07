@@ -43,7 +43,7 @@ $errorparams          = $this->data['errorparams'];
         <?php //echo $this->t('{login:user_pass_text}'); ?>
       </p>
 
-      <form action="?" method="post" name="f">
+      <form action="?" method="post" name="f" accept-charset="utf-8">
         <div class="form-group text-left">
           <label for-"username">Email</label>
           <input type="text" id="username"
