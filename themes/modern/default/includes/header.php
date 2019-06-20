@@ -72,6 +72,102 @@ endif;
         endforeach;
     endif;
     ?>
+    <style>
+        body {
+            /*background: #ffffff;*/
+            background:url('https://drknbmw32n1iy.cloudfront.net/images/people_meeting_flipped.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-color: dimgrey;
+            -webkit-background-size: 100% auto;
+            -moz-background-size: 100% auto;
+            -o-background-size: 100% auto;
+            color: white;
+        }
+        .form-signin
+        {
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+        .form-signin .form-signin-heading, .form-signin .checkbox
+        {
+            margin-bottom: 10px;
+        }
+        .form-signin .checkbox
+        {
+            font-weight: normal;
+        }
+        .form-signin .form-control
+        {
+            position: relative;
+            font-size: 16px;
+            height: auto;
+            padding: 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .form-signin .form-control:focus
+        {
+            z-index: 2;
+        }
+        .form-signin input[type="text"]
+        {
+            margin-bottom: -1px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .form-signin input[type="password"]
+        {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+        .account-wall
+        {
+            margin-top: 20px;
+            padding: 40px 0px 20px 0px;
+            background-color: #f7f7f7;
+            -moz-box-shadow: 0px 2px 30px black;
+            -webkit-box-shadow: 0px 2px 30px black;
+            box-shadow: 0px 2px 30px black;
+        }
+        .login-title
+        {
+            color: #555;
+            font-size: 18px;
+            font-weight: 400;
+            display: block;
+        }
+        .profile-img
+        {
+            margin: 0 auto 10px;
+            display: block;
+        }
+        .forgot-password-link {
+            margin-top: 8px;
+        }
+        .sso-link {
+            margin-top: 8px;
+        }
+        .vertical-center {
+            min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+            min-height: 100vh; /* These two lines are counted as one :-)       */
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+        }
+        .content {
+            background-color: transparent;
+        }
+
+        @media (max-width: 767px) {
+            body {
+                background-image: none;
+            }
+        }
+
+    </style>
 </head>
 <body>
 
@@ -82,48 +178,6 @@ endif;
 <![endif]-->
 
 <!-- start .header -->
-<div class="header">
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navigation" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="header-navigation">
-                <div class="text-center" style="padding: 20px;"><a href="https://innovationengineeringlabs.com"><img style="max-height: 150px;" class="img-polaroid" src="https://drknbmw32n1iy.cloudfront.net/images/labs_logo_march_2015.png" alt="logo"></a></div>
-                <ul class="nav navbar-nav navbar-right">
-                    <?php //echo simplesamlphp_get_authentication_nav($this); ?>
-                    <!--              <li role="presentation" class="dropdown">-->
-                    <!--                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">-->
-                    <!--                  Language <span class="caret"></span>-->
-                    <!--                </a>-->
-                    <?php
-
-                    // render the language selector
-                    //                echo simplesamlphp_get_languagebar($this, array(
-                    //                  'post' => $_POST,
-                    //                  'languageParameterName' => $this->languageParameterName,
-                    //                ));
-                    ?>
-                    <!--              </li>-->
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="row">
-            <div class="page-header col-md-12">
-                <h1 class="mainTitle"><?php echo $title; ?></h1>
-            </div>
-        </div>
-    </div>
-
-</div>
 
 <!-- start the .content -->
 <div class="content">
