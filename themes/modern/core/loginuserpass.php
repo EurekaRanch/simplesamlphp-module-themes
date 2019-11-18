@@ -41,12 +41,14 @@ $errorparams          = $this->data['errorparams'];
                        name="username"
                        value="<?php echo htmlspecialchars($this->data['username']); ?>"
                        class="form-control"
+                       autocomplete="username"
                        placeholder="Email" required autofocus
                 />
                 <input type="password" id="password"
                        tabindex="2"
                        name="password"
                        class="form-control"
+                       autocomplete="current-password"
                        placeholder="Password" required
                 />
 

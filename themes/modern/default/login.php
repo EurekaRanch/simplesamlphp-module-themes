@@ -46,20 +46,27 @@ $errorparams          = $this->data['errorparams'];
 
         <div class="form-group">
           <label for-"username">Username</label>
-          <input type="text" id="username"
-            tabindex="1"
-            name="username"
-            value="<?php echo htmlspecialchars($this->data['username']); ?>"
-            class="form-control"
+          <input
+                 type="text"
+                 id="username"
+                 tabindex="1"
+                 name="username"
+                 value="<?php echo htmlspecialchars($this->data['username']); ?>"
+                 class="form-control"
+                 autocomplete="username"
             />
         </div>
 
         <div class="form-group">
           <label for-"password">Password</label>
-          <input type="password" id="password"
-            tabindex="2"
-            name="password"
-            class="form-control" />
+          <input
+                 type="password"
+                 id="password"
+                 tabindex="2"
+                 name="password"
+                 class="form-control"
+                 autocomplete="current-password"
+          />
         </div>
 
         <button type="submit" class="btn btn-default">Submit</button>
