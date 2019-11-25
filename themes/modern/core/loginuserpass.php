@@ -24,7 +24,7 @@ $errorparams          = $this->data['errorparams'];
 <div class="vertical-center text-center">
     <div class="col-sm-9 col-xs-12 col-md-4 col-md-offset-8">
         <div class="account-wall">
-            <a href="<?= WEBSITE ?>"><img style="max-height: 125px;" class="img-polaroid profile-img" src="https://drknbmw32n1iy.cloudfront.net/images/labs_logo_march_2015.png" alt="logo"></a>
+            <a href="<?= WEBSITE ?>"><img style="max-height: 125px;" class="img-polaroid profile-img" src="<?= LABS_LOGO ?>" alt="logo"></a>
             <h1 class="text-center login-title">Please sign in to continue</h1>
             <?php if ($errorcode !== NULL) : ?>
                 <div class="col-md-12">
