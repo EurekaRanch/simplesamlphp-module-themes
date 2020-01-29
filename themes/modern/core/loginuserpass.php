@@ -24,7 +24,7 @@ $errorparams          = $this->data['errorparams'];
 <div class="vertical-center text-center">
     <div class="col-sm-9 col-xs-12 col-md-4 col-md-offset-8">
         <div class="account-wall">
-            <a href="<?= WEBSITE ?>"><img style="max-height: 125px;" class="img-polaroid profile-img" src="<?= LABS_LOGO ?>" alt="logo"></a>
+            <a href="<?= WEBSITE ?>"><img class="img-polaroid profile-img login-logo" src="<?= LABS_LOGO ?>" alt="logo"></a>
             <h1 class="text-center login-title">Please sign in to continue</h1>
             <?php if ($errorcode !== NULL) : ?>
                 <div class="col-md-12">
@@ -61,7 +61,10 @@ $errorparams          = $this->data['errorparams'];
                            value="<?php echo htmlspecialchars($value); ?>" />
                 <?php endforeach; ?>
             </form>
-            <div class="text-center sso-link"><a href="<?= WEBSITE ?>login/sso_login.php">SSO Login</a></div>
+            <div class="sso-and-create-account-links">
+                <div class="pull-left sso-link"><a href="<?= WEBSITE ?>login/sso_login.php">SSO Login</a></div>
+                <div class="pull-right create-account-link"><a href="<?= WEBSITE ?>register">Create An Account</a></div>
+            </div>
         </div>
     </div>
 </div>
