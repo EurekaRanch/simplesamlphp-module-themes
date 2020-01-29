@@ -147,8 +147,9 @@ endif;
         .forgot-password-link {
             margin-top: 8px;
         }
-        .sso-link {
-            margin-top: 8px;
+        .sso-and-create-account-links {
+            margin: 15px;
+            padding: 5px;
         }
         .vertical-center {
             min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
@@ -159,6 +160,12 @@ endif;
         }
         .content {
             background-color: transparent;
+        }
+
+        .login-logo {
+            max-height: 125px;
+            max-width: 100%;
+            padding: 10px;
         }
 
         @media (max-width: 767px) {
