@@ -63,7 +63,7 @@ $errorparams          = $this->data['errorparams'];
             </form>
             <div class="sso-and-create-account-links">
                 <div class="pull-left sso-link"><a href="<?= WEBSITE ?>login/sso_login.php">SSO Login</a></div>
-                <div class="pull-right create-account-link"><a href="<?= WEBSITE ?>register">Create An Account</a></div>
+<!--                 <div class="pull-right create-account-link"><a href="<?= WEBSITE ?>register">Create An Account</a></div> -->
             </div>
         </div>
     </div>
