@@ -54,7 +54,7 @@ $errorparams          = $this->data['errorparams'];
 
                 <button class="btn btn-lg btn-primary btn-block" type="submit">
                     Sign in</button>
-                <a class="pull-right forgot-password-link"href="<?= WEBSITE ?>getpassword/">Forgot Password?</a><span class="clearfix"></span>
+                <a class="pull-right forgot-password-link" href="<?= WEBSITE ?>getpassword/">Forgot Password?</a><span class="clearfix"></span>
                 <?php foreach ($this->data['stateparams'] as $name => $value) : ?>
                     <input type="hidden"
                            name="<?php echo htmlspecialchars($name); ?>"
