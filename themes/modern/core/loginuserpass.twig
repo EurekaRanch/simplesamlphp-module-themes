@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 {% endif %}
-                <form class="form-signin" action="?" method="post" name="f">
+                <form id="f" class="form-signin pure-form pure-form-aligned center-form" action="{{ moduleURL('core/loginuserpass', {'AuthState': AuthState}) }}" method="post" name="f">
                     <input type="text" id="username"
                            tabindex="1"
                            name="username"
@@ -47,9 +47,6 @@
 
                     <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
                     <a class="pull-right forgot-password-link" href="{{ constant('WEBSITE') }}getpassword/">Forgot Password?</a><span class="clearfix"></span>
-                    {%- for name, value in stateparams %}
-                        <input type="hidden" name="{{ name }}" value="{{ value }}">
-                    {%- endfor %}
                 </form>
                 <div class="sso-and-create-account-links">
                     <div class="pull-left sso-link"><a href="{{ constant('WEBSITE') }}login/sso_login.php">SSO Login</a></div>
