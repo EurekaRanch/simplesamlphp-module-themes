@@ -1,0 +1,32 @@
+
+{% set pagetitle = dictTitle | trans %}
+{% extends "base.twig" %}
+{% block content %}
+    <div style="background: white; color: black; padding: 15px;">
+        <h2>{{ dictTitle | trans }}</h2>
+        {% if showerrors -%}
+            {{ dictDescr | trans(parameters) }}
+        {%- endif %}
+        {# include optional information for error
+           Some exceptions set 'includeTemplate' to the name of a template to include.
+           e.g. "core:no_state.tpl.php". The format is "<module>:<template name>"
+        #}
+        {% if includeTemplate -%}
+            {% set parts = includeTemplate|split(':') %}
+            {% set namespacedTemplate = "@" ~ parts[0] ~ "/" ~ parts[1] %}
+            {% include(namespacedTemplate) %}
+        {%- endif %}
+
+        {# print out exception only if the exception is available #}
+        {% if showerrors -%}
+            <h2>{{'Debug information' | trans}}</h2>
+            <p>{{'The debug information below may be of interest to the administrator / help desk:' | trans}}</p>
+            <div class="code-box code-box-content">
+                <pre>{{ error.exceptionMsg }}<br />{{ error.exceptionTrace }}
+                </pre>
+            </div>
+        {%- endif %}
+        <br><br>
+        <p>This issue may be resolved by first logging into the website <b><a href="{{ constant('WEBSITE') }}login">here</a></b>. If you continue to have issues logging in or loading this web link, please <a href="mailto:support@jsyb.com">reach out to us for assistance</a>.</p>
+    </div>
+{% endblock %}
