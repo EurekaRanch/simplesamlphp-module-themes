@@ -3,7 +3,7 @@
 {% extends "@core/base.twig" %}
 
 {% block postload %}
-    <script src="/{{baseurlpath}}module.php/themes/js/loginuserpass.js"></script>
+    <script src="{{ constant('WEBSITE') }}{{baseurlpath}}module.php/themes/js/loginuserpass.js"></script>
 {% endblock %}
 
 {% block content %}
