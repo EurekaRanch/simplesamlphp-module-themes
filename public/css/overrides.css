@@ -1,13 +1,18 @@
 body {
 	/*background: #ffffff;*/
-	background:url('https://drknbmw32n1iy.cloudfront.net/images/people_meeting_flipped.jpg') no-repeat center center fixed;
 	background-size: cover;
-	background-color: dimgrey;
+	background: dimgrey url('https://drknbmw32n1iy.cloudfront.net/images/people_meeting_flipped.jpg') no-repeat fixed center center;
 	-webkit-background-size: 100% auto;
 	-moz-background-size: 100% auto;
 	-o-background-size: 100% auto;
 	color: white;
 }
+
+body[id^='admin'] {
+	background: unset !important;
+	color: initial !important;
+}
+
 .form-signin
 {
 	max-width: 330px;
