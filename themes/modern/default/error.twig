@@ -5,7 +5,7 @@
     <div style="background: white; color: black; padding: 15px;">
         <a href="{{ constant('WEBSITE') }}"><img class="img-polaroid profile-img login-logo" src="{{ constant('LABS_LOGO') }}" alt="logo"></a>
         {% if errorCode == 'NOSTATE' %}
-            <div><h3 style="text-align:center; line-height: 1.4;">The authentication information in this browser page or tab has expired.<br><a href="{{ constant('WEBSITE') }}login">Please click here to return to the site.</a></h3></div>
+            <div><h3 style="text-align:center; line-height: 1.4;">The authentication information in this browser page or tab has expired.<br><a href="{{ constant('WEBSITE') }}">Please click here to return to the site.</a></h3></div>
             <br><br><br>
             <div style="text-align:center;"><i style="color: #3B413D;">This can happen if you bookmarked this web address, or had it open in a browser tab for more than a few days.<br>If you continue to have issues logging in or loading this web link, please <a href="mailto:support@jsyb.com">reach out to us for assistance</a>.</i></div>
         {% else %}
