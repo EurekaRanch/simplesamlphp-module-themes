@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 {% endif %}
-                <form id="f" class="form-signin pure-form pure-form-aligned center-form" action="{{ moduleURL('core/loginuserpass', {'AuthState': AuthState}) }}" method="post" name="f">
+                <form id="f" class="form-signin pure-form pure-form-aligned center-form" action="{{ formURL }}" method="post" name="f" spellcheck="false">
                     <input type="text" id="username"
                            tabindex="1"
                            name="username"
