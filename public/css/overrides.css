@@ -80,6 +80,12 @@ body[id^='admin'] {
 .sso-and-create-account-links {
 	margin: 15px;
 	padding: 5px;
+	border-top: thin solid #b5b1b1;
+	padding-top: 18px;
+}
+
+.create-account-link {
+	margin-top: 18px;
 }
 .vertical-center {
 	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
