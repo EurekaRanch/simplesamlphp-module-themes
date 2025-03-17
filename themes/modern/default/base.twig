@@ -5,8 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
     <title>{{ pagetitle }}</title>
-    <link rel="stylesheet" type="text/css" href="{{ constant('WEBSITE') }}{{baseurlpath}}module.php/themes/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="{{ constant('WEBSITE') }}{{baseurlpath}}module.php/themes/css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="{{ constant('WEBSITE') }}{{baseurlpath}}module.php/themes/css/bootstrap.min.css" />
+{#    <link rel="stylesheet" type="text/css" href="{{ constant('WEBSITE') }}{{baseurlpath}}module.php/themes/css/bootstrap-theme.css" />#}
     <link rel="stylesheet" type="text/css" href="{{ constant('WEBSITE') }}{{baseurlpath}}module.php/themes/css/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="{{ constant('WEBSITE') }}{{baseurlpath}}module.php/themes/css/print.css" />
     <link rel="stylesheet" type="text/css" href="{{ constant('WEBSITE') }}{{baseurlpath}}module.php/themes/css/screen.css" />
@@ -16,10 +16,8 @@
     <link href="{{ constant('WEBSITE') }}{{baseurlpath}}module.php/themes/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
     <meta name="robots" content="noindex, nofollow">
-{#    <link rel="preload" href="{{ asset('js/bundle.js') }}" as="script">#}
-{#    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>#}
-    <script src="{{ constant('WEBSITE') }}{{baseurlpath}}module.php/themes/js/jquery.js"></script>
-    <script src="{{ constant('WEBSITE') }}{{baseurlpath}}module.php/themes/js/bootstrap.js"></script>
+    <script src="{{ constant('WEBSITE') }}{{baseurlpath}}module.php/themes/js/jquery-3.7.1.slim.min.js"></script>
+    <script src="{{ constant('WEBSITE') }}{{baseurlpath}}module.php/themes/js/bootstrap.min.js"></script>
     {% block preload %}{% endblock %}
   </head>
   <body id="{{ templateId }}">
